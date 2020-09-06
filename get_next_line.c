@@ -52,7 +52,6 @@ static int	output(char **s, char **line, int ret, int fd)
 		return (ERROR);
 	else if (ret == 0 && s[fd] == NULL)
 	{
-		free(*line);
 		if (!((*line) = ft_strdup("\0")))
 			return (ERROR);
 		return (EOF_REACHED);
